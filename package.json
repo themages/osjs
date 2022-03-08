@@ -1,6 +1,6 @@
 {
 	"name": "@os-js/like",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "腾讯云 cos 和阿里云 oss 的对象存储封装库",
 	"main": "index.js",
 	"scripts": {},
