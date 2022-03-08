@@ -26,7 +26,6 @@ jobs:
       - name: Publish
         run: |
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-          npm login
           npm publish
         env:
           GITHUB_TOKEN: ${{ secrets.OSCI }}
