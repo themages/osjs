@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "腾讯云 cos 和阿里云 oss 的对象存储封装库",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/themages/osjs.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "曾星旗",
+    "email": "me@zengxingqi.com",
+    "url": "https://canicode.cn"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/themages/osjs/issues"
