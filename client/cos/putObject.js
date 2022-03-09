@@ -2,6 +2,7 @@ import { init } from './init'
 // 简单上传接口适用于小文件上传
 export function PutObject(obj = {}) {
 	const {
+		url,
 		Bucket,
 		Region,
 		Key,
@@ -12,7 +13,7 @@ export function PutObject(obj = {}) {
 		onTaskReady,
 		response,
 	} = obj
-	init().putObject(
+	init({ url }).putObject(
 		{
 			Bucket /* 必须字段，存储桶的名称 */,
 			Region /* 必须字段，存储桶所在地域 */,

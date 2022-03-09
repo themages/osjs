@@ -1,8 +1,8 @@
 import { init } from './init'
 // 查询可追加对象的 Position
 export function headObject(obj = {}) {
-	const { Bucket, Region, Key, response } = obj
-	init().headObject(
+	const { url, Bucket, Region, Key, response } = obj
+	init({ url }).headObject(
 		{
 			Bucket /* 填入您自己的存储桶，必须字段 */,
 			Region /* 存储桶所在地域，例如ap-beijing，必须字段 */,
