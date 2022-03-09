@@ -45,6 +45,7 @@
 	},
 	"files": [
 		"example",
+		"index.js",
 		"umd.js"
 	]
 }
