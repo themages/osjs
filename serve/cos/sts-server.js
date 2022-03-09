@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 // 支持跨域访问
 app.all('*', function (req, res, next) {
 	res.header('Content-Type', 'application/json')
-	res.header('Access-Control-Allow-Origin', 'http://127.0.0.1')
+	res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
 	res.header('Access-Control-Allow-Headers', 'origin,accept,content-type')
 	if (req.method.toUpperCase() === 'OPTIONS') {
 		res.end()
