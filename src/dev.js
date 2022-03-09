@@ -5,6 +5,7 @@ files.addEventListener('change', function (e) {
 	console.log(e.target.files)
 	const files = e.target.files[0]
 	PutObject({
+		url: 'http://127.0.0.1:3002/sts',
 		Bucket: 'sls-cloudfunction-ap-guangzhou-code-1256070452',
 		Region: 'ap-guangzhou',
 		Key: 'like/' + files.name,
