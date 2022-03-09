@@ -1,12 +1,12 @@
 import { babel } from '@rollup/plugin-babel'
-import { input, external, watch, plugins } from './rollup.config'
+import { external, watch, plugins } from './rollup.config'
 plugins.pop()
 export default {
-	input,
+	input: 'src/dev.js',
 	plugins: [...plugins, babel({ babelHelpers: 'bundled' })],
 	output: [
 		{
-			file: 'index.js',
+			file: 'dev.js',
 			format: 'esm',
 			name: '@os-js/like',
 			globals: {},

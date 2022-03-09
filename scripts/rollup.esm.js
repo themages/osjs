@@ -1,5 +1,4 @@
 import { input, version, external, watch, plugins } from './rollup.config'
-plugins.pop()
 export default {
 	input,
 	plugins,
