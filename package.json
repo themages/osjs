@@ -7,7 +7,6 @@
 		"start": "npm-run-all --parallel dev serve",
 		"dev": "rollup -w -c scripts/rollup.dev.js",
 		"build:esm": "rollup -c scripts/rollup.esm.js",
-		"build:umd": "rollup -c scripts/rollup.umd.js",
 		"serve:cos": "node serve/cos/sts-server.js",
 		"serve": "browser-sync start --server --serveStatic 'example' --files /index.html 'src/index.js' -w"
 	},
@@ -45,7 +44,6 @@
 	},
 	"files": [
 		"example",
-		"index.js",
-		"umd.js"
+		"index.js"
 	]
 }
