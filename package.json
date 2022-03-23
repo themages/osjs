@@ -4,7 +4,7 @@
 	"description": "腾讯云 cos 和阿里云 oss 的对象存储封装库",
 	"main": "index.js",
 	"scripts": {
-		"start": "npm-run-all --parallel dev serve",
+		"start": "npm-run-all --parallel dev serve:cos serve",
 		"dev": "rollup -w -c scripts/rollup.dev.js",
 		"build:esm": "rollup -c scripts/rollup.esm.js",
 		"serve:cos": "node serve/cos/sts-server.js",
